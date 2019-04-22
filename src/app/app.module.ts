@@ -1,33 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './components/register/register.component';
-import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { LoginComponent } from './login/login.component';
+import { OrganizationComponent } from './organization/organization.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { UserhomeComponent } from './userhome/userhome.component';
+import { AddeducationComponent } from './addeducation/addeducation.component';
+import { AddcertificationComponent } from './addcertification/addcertification.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
-    HomeComponent,
     LoginComponent,
-    NavbarComponent
+    OrganizationComponent,
+    LandingPageComponent,
+    FooterComponent,
+    AboutComponent,
+    UserhomeComponent,
+    AddeducationComponent,
+    AddcertificationComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule, 
-    MatCheckboxModule,
-   
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
